@@ -1722,7 +1722,7 @@
  */
 #define PROBE_ENABLE_DISABLE
 #if ENABLED(PROBE_ENABLE_DISABLE)
-  #define PROBE_ENABLE_PIN PH2   // Override the default pin here
+  #define PROBE_ENABLE_PIN PA2   // Override the default pin here
 #endif
 
 /**
