@@ -33,8 +33,8 @@
  *  - Single Z endstop (may home with probe)
  */
 
-#define MOTHERBOARD BOARD_BTT_SKR_SE_BX_V3 // Uncomment for the V3.0 board, otherwise V2.0 is assumed
-#define BX_ALL_METAL_HOTEND                // Uncomment for newer H2 extruder with all metal heatbreak
+//#define MOTHERBOARD BOARD_BTT_SKR_SE_BX_V3 // Uncomment for the V3.0 board, otherwise V2.0 is assumed
+//#define BX_ALL_METAL_HOTEND                // Uncomment for newer H2 extruder with all metal heatbreak
 //#define BX_SWAP_ZM_E1M                     // Uncomment to swap Z and E1 motors
 #define BIQU_BX
 
@@ -1433,7 +1433,7 @@
 //#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
 // Force the use of the probe for Z-axis homing
-#define USE_PROBE_FOR_Z_HOMING
+//#define USE_PROBE_FOR_Z_HOMING
 
 /**
  * Z_MIN_PROBE_PIN
@@ -2221,7 +2221,7 @@
 #if ANY(AUTO_BED_LEVELING_LINEAR, AUTO_BED_LEVELING_BILINEAR)
 
   // Set the number of grid points per dimension.
-  #define GRID_MAX_POINTS_X 9
+  #define GRID_MAX_POINTS_X 5
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Probe along the Y axis, advancing X after each column
@@ -2374,7 +2374,7 @@
  * - Allows Z homing only when XY positions are known and trusted.
  * - If stepper drivers sleep, XY homing may be required again before Z homing.
  */
-#define Z_SAFE_HOMING
+//#define Z_SAFE_HOMING
 
 #if ENABLED(Z_SAFE_HOMING)
   #define Z_SAFE_HOMING_X_POINT X_CENTER  // (mm) X point for Z homing
